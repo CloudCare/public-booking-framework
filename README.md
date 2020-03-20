@@ -86,7 +86,7 @@ Available templates:
 ![](./picture/spider.png)
 
 生成的代码如下图所示
-<center>![](./picture/spider_template_code.png)</center>
+![](./picture/spider_template_code.png)
 
 <font color=#ff0000 size=4>注意：从scrapy源码中可以看出，若使用basic模板，则必须实现parse方法，由parse实现主要爬虫逻辑；但若使用crawl模板，千万不要覆盖parse方法。</font>
 
