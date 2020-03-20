@@ -37,7 +37,7 @@ Scrapy执行步骤大致如下:
 或者
 > scrapy -h  
   
-<center>![](./picture/cmd.png)</center> 
+<center>![high](./picture/cmd.png)</center> 
 
 ### 新建项目
 
@@ -55,7 +55,7 @@ You can start your first spider with:
 
 创建项目后，会在当前文件夹下创建一个与项目名同名文件夹，目录内容如下图所示。  
 
-<center>![](./picture/directory.png)</center>  
+<center>![high](./picture/directory.png)</center>  
 
 - item.py定义spider抓取内容信息；
 - pipelines.py即框架说明中Item Pipeline部分；
@@ -83,10 +83,10 @@ Available templates:
 如创建一个spider，名为chinaweather，并且采用crawl模板，会在spider文件夹下生成chinaweather.py文件，如下图所示。
 `scrapy genspider -d crawl chinaweather chinaweather.com.cn`
 
-<center>![](./picture/spider.png)</center>
+<center>![high](./picture/spider.png)</center>
 
 生成的代码如下图所示
-<center>![](./picture/spider_template_code.png)</center>
+<center>![high](./picture/spider_template_code.png)</center>
 
 <font color=#ff0000 size=4>注意：从scrapy源码中可以看出，若使用basic模板，则必须实现parse方法，由parse实现主要爬虫逻辑；但若使用crawl模板，千万不要覆盖parse方法。</font>
 
