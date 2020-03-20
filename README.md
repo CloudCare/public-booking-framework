@@ -15,7 +15,7 @@ Scrapy框架流程如下图所示，有如下几个模块：
 	- Spider middlewares：介于Scrapy Engine和Spiders之间的钩子框架，主要是处理Spiders的响应输入和请求输出。可以插入自定义的代码来处理发送给Spiders的请求和返回Spider获取的响应内容和项目。
 
 
-<center>![](./picture/scrapy_framework.png)</center>  
+![](./picture/scrapy_framework.png)
   
 图中绿色线条表示数据流向，首先从初始 URL 开始，Scheduler 会将其交给 Downloader，Downloader向网络服务器发送服务请求进行下载，得到响应后将下载的数据交给Spider，Spider会对网页进行分析，分析出来的结果有两种：一种是需要进一步抓取的链接，这些链接会被传回 Scheduler；另一种是需要保存的数据，它们则被送到 Pipeline，Item会定义数据格式，最后由Pipeline对数据进行清洗、去重等处理后存储到文件或数据库。
 Scrapy执行步骤大致如下:
@@ -37,7 +37,7 @@ Scrapy执行步骤大致如下:
 或者
 > scrapy -h  
   
-<center>![high](./picture/cmd.png)</center> 
+![high](./picture/cmd.png)
 
 ### 新建项目
 
@@ -55,7 +55,7 @@ You can start your first spider with:
 
 创建项目后，会在当前文件夹下创建一个与项目名同名文件夹，目录内容如下图所示。  
 
-<center>![high](./picture/directory.png)</center>  
+![high](./picture/directory.png) 
 
 - item.py定义spider抓取内容信息；
 - pipelines.py即框架说明中Item Pipeline部分；
@@ -83,7 +83,7 @@ Available templates:
 如创建一个spider，名为chinaweather，并且采用crawl模板，会在spider文件夹下生成chinaweather.py文件，如下图所示。
 `scrapy genspider -d crawl chinaweather chinaweather.com.cn`
 
-<center>![high](./picture/spider.png)</center>
+![high](./picture/spider.png)
 
 生成的代码如下图所示
 <center>![high](./picture/spider_template_code.png)</center>
